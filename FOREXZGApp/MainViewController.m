@@ -8,8 +8,12 @@
 
 #import "MainViewController.h"
 #import <WebKit/WebKit.h>
+#import "UIView+FGLoading.h"
+
 @interface MainViewController () <WKNavigationDelegate, WKUIDelegate>
+
 @property (strong, nonatomic) WKWebView *wkWebView;
+
 @end
 
 @implementation MainViewController
@@ -22,7 +26,9 @@
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://web88.def777.com/wm/pr198/"]];
     [self.wkWebView loadRequest:request];
 
+
 }
+
 
 - (WKWebView *)createWkWebViewWithRect:(CGRect)rect configuration:(WKWebViewConfiguration *)config closeButton:(BOOL)closeButton
 {
@@ -58,6 +64,7 @@
 #pragma mark - <WKNavigationDelegate>
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
 {
+    [webView fg_startLoading];
     decisionHandler(WKNavigationActionPolicyAllow);
 }
 
@@ -76,7 +83,8 @@
 
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error
 {
-    if (error) {
+    [webView fg_stopLoading];
+    if (error.code == -1001) {
         [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://web89.def777.com/wm/pr198/"]]];
     }
 }
@@ -87,11 +95,13 @@
 
 - (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation
 {
+    [webView fg_stopLoading];
 }
 
 - (void)webView:(WKWebView *)webView didFailNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error
 {
-    if (error) {
+    [webView fg_stopLoading];
+    if (error.code == -1001) {
         [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://web89.def777.com/wm/pr198/"]]];
     }
 }
