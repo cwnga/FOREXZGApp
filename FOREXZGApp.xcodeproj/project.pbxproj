@@ -15,6 +15,7 @@
 		F7852D0D1EA88C8000E8E2C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7852D0B1EA88C8000E8E2C6 /* LaunchScreen.storyboard */; };
 		F7852D171EA88CD500E8E2C6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7852D151EA88CD500E8E2C6 /* MainViewController.m */; };
 		F7852D181EA88CD500E8E2C6 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7852D161EA88CD500E8E2C6 /* MainViewController.xib */; };
+		F7BAD3C31EE5B79800606E5C /* UIView+FGLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD3C21EE5B79800606E5C /* UIView+FGLoading.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		F7852D141EA88CD500E8E2C6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F7852D151EA88CD500E8E2C6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F7852D161EA88CD500E8E2C6 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		F7BAD3C11EE5B79800606E5C /* UIView+FGLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FGLoading.h"; sourceTree = "<group>"; };
+		F7BAD3C21EE5B79800606E5C /* UIView+FGLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FGLoading.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				F7852D141EA88CD500E8E2C6 /* MainViewController.h */,
 				F7852D151EA88CD500E8E2C6 /* MainViewController.m */,
 				F7852D161EA88CD500E8E2C6 /* MainViewController.xib */,
+				F7BAD3C11EE5B79800606E5C /* UIView+FGLoading.h */,
+				F7BAD3C21EE5B79800606E5C /* UIView+FGLoading.m */,
 			);
 			path = FOREXZGApp;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7BAD3C31EE5B79800606E5C /* UIView+FGLoading.m in Sources */,
 				F7852D051EA88C8000E8E2C6 /* ViewController.m in Sources */,
 				F7852D021EA88C8000E8E2C6 /* AppDelegate.m in Sources */,
 				F7852CFF1EA88C8000E8E2C6 /* main.m in Sources */,
