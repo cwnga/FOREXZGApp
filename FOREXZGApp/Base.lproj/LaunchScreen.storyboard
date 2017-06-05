@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,21 +22,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V1.0.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mv7-d0-cg0">
-                                <rect key="frame" x="162" y="362" width="53" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="168" y="599" width="39" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="RGp-iG-cEh">
-                                <rect key="frame" x="97" y="172" width="180" height="180"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="RGp-iG-cEh">
+                                <rect key="frame" x="147.5" y="213.5" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="WFc-LE-M8P"/>
+                                    <constraint firstAttribute="width" secondItem="RGp-iG-cEh" secondAttribute="height" multiplier="1:1" id="egJ-J7-8c8"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOREXZG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9l-Az-pSI">
+                                <rect key="frame" x="120.5" y="313" width="134" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.14449679851531982" green="0.14143252372741699" blue="0.14126685261726379" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="J9l-Az-pSI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2U9-oM-cOX"/>
                             <constraint firstItem="RGp-iG-cEh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Bwg-Ns-DGv"/>
-                            <constraint firstItem="Mv7-d0-cg0" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="40" id="W9a-EM-FSI"/>
-                            <constraint firstItem="Mv7-d0-cg0" firstAttribute="top" secondItem="RGp-iG-cEh" secondAttribute="bottom" constant="10" id="gNg-Wt-hw2"/>
+                            <constraint firstItem="RGp-iG-cEh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-80" id="IUQ-x2-UhI"/>
+                            <constraint firstItem="J9l-Az-pSI" firstAttribute="top" secondItem="RGp-iG-cEh" secondAttribute="bottom" constant="20" id="Vvn-8f-6mx"/>
                             <constraint firstItem="Mv7-d0-cg0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hXC-hT-BHv"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Mv7-d0-cg0" secondAttribute="bottom" constant="50" id="wus-ED-giv"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -45,6 +58,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon" width="180" height="180"/>
+        <image name="Icon" width="256" height="256"/>
     </resources>
 </document>
