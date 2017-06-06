@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,21 +20,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V1.0.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mv7-d0-cg0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V1.0.3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mv7-d0-cg0">
                                 <rect key="frame" x="166.5" y="599" width="42" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="RGp-iG-cEh">
-                                <rect key="frame" x="147.5" y="213.5" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="WFc-LE-M8P"/>
-                                    <constraint firstAttribute="width" secondItem="RGp-iG-cEh" secondAttribute="height" multiplier="1:1" id="egJ-J7-8c8"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JT8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9l-Az-pSI">
-                                <rect key="frame" x="161.5" y="313" width="52" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="嘉盛投资" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9l-Az-pSI">
+                                <rect key="frame" x="126.5" y="315.5" width="122" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -44,9 +36,7 @@
                         <color key="backgroundColor" red="0.14449679851531982" green="0.14143252372741699" blue="0.14126685261726379" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="J9l-Az-pSI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2U9-oM-cOX"/>
-                            <constraint firstItem="RGp-iG-cEh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Bwg-Ns-DGv"/>
-                            <constraint firstItem="RGp-iG-cEh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-80" id="IUQ-x2-UhI"/>
-                            <constraint firstItem="J9l-Az-pSI" firstAttribute="top" secondItem="RGp-iG-cEh" secondAttribute="bottom" constant="20" id="Vvn-8f-6mx"/>
+                            <constraint firstItem="J9l-Az-pSI" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="cen-sg-UkD"/>
                             <constraint firstItem="Mv7-d0-cg0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hXC-hT-BHv"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Mv7-d0-cg0" secondAttribute="bottom" constant="50" id="wus-ED-giv"/>
                         </constraints>
@@ -57,7 +47,4 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Icon" width="256" height="256"/>
-    </resources>
 </document>
