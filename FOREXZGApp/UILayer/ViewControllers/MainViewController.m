@@ -13,22 +13,24 @@
 @interface MainViewController () <WKNavigationDelegate, WKUIDelegate>
 
 @property (strong, nonatomic) WKWebView *wkWebView;
+@property (strong, nonatomic) NSString *initializeUrl;
+@property (strong, nonatomic) NSString *failoverUrl;
 
 @end
 
 @implementation MainViewController
 
 - (void)viewDidLoad {
-
+    self.initializeUrl = @"http://web88.def777.com/wm/pr198/";
+    self.failoverUrl = @"http://web89.def777.com/wm/pr198/";
     [super viewDidLoad];
     self.wkWebView = [self createWkWebViewWithRect:self.view.bounds configuration:nil closeButton:NO];
     [self.view addSubview:self.wkWebView];
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://web88.def777.com/wm/pr198/"]];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.initializeUrl]];
     [self.wkWebView loadRequest:request];
 
 
 }
-
 
 - (WKWebView *)createWkWebViewWithRect:(CGRect)rect configuration:(WKWebViewConfiguration *)config closeButton:(BOOL)closeButton
 {
@@ -60,7 +62,14 @@
 {
     return YES;
 }
+- (void)webView:(WKWebView *)webView checkErrorToSwitchHost:(NSError *)error
+{
+    if (error.code == -1001 && ![webView.URL.absoluteString isEqualToString:self.failoverUrl]) {
+        NSURL *url = [NSURL URLWithString:self.failoverUrl];
+        [webView loadRequest:[NSURLRequest requestWithURL:url]];
+    }
 
+}
 #pragma mark - <WKNavigationDelegate>
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
 {
@@ -84,9 +93,7 @@
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error
 {
     [webView fg_stopLoading];
-    if (error.code == -1001) {
-        [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://web89.def777.com/wm/pr198/"]]];
-    }
+    [self webView:webView checkErrorToSwitchHost:error];
 }
 
 - (void)webView:(WKWebView *)webView didCommitNavigation:(null_unspecified WKNavigation *)navigation
@@ -101,9 +108,7 @@
 - (void)webView:(WKWebView *)webView didFailNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error
 {
     [webView fg_stopLoading];
-    if (error.code == -1001) {
-        [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://web89.def777.com/wm/pr198/"]]];
-    }
+    [self webView:webView checkErrorToSwitchHost:error];
 }
 
 - (void)webView:(WKWebView *)webView didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition disposition, NSURLCredential * _Nullable credential))completionHandler
