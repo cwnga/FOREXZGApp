@@ -7,33 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F71A911B1EF0349600242FF5 /* UIView+FGLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A91161EF0349600242FF5 /* UIView+FGLoading.m */; };
+		F71A911C1EF0349600242FF5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71A91191EF0349600242FF5 /* MainViewController.m */; };
+		F71A911D1EF0349600242FF5 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71A911A1EF0349600242FF5 /* MainViewController.xib */; };
 		F7852CFF1EA88C8000E8E2C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7852CFE1EA88C8000E8E2C6 /* main.m */; };
 		F7852D021EA88C8000E8E2C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7852D011EA88C8000E8E2C6 /* AppDelegate.m */; };
-		F7852D051EA88C8000E8E2C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7852D041EA88C8000E8E2C6 /* ViewController.m */; };
 		F7852D081EA88C8000E8E2C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7852D061EA88C8000E8E2C6 /* Main.storyboard */; };
 		F7852D0A1EA88C8000E8E2C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7852D091EA88C8000E8E2C6 /* Assets.xcassets */; };
 		F7852D0D1EA88C8000E8E2C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7852D0B1EA88C8000E8E2C6 /* LaunchScreen.storyboard */; };
-		F7852D171EA88CD500E8E2C6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7852D151EA88CD500E8E2C6 /* MainViewController.m */; };
-		F7852D181EA88CD500E8E2C6 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7852D161EA88CD500E8E2C6 /* MainViewController.xib */; };
-		F7BAD3C31EE5B79800606E5C /* UIView+FGLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BAD3C21EE5B79800606E5C /* UIView+FGLoading.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F71A91151EF0349600242FF5 /* UIView+FGLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FGLoading.h"; sourceTree = "<group>"; };
+		F71A91161EF0349600242FF5 /* UIView+FGLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FGLoading.m"; sourceTree = "<group>"; };
+		F71A91181EF0349600242FF5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F71A91191EF0349600242FF5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F71A911A1EF0349600242FF5 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		F7852CFA1EA88C8000E8E2C6 /* FOREXZGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FOREXZGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7852CFE1EA88C8000E8E2C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F7852D001EA88C8000E8E2C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7852D011EA88C8000E8E2C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F7852D031EA88C8000E8E2C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F7852D041EA88C8000E8E2C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F7852D071EA88C8000E8E2C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7852D091EA88C8000E8E2C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7852D0C1EA88C8000E8E2C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7852D0E1EA88C8000E8E2C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7852D141EA88CD500E8E2C6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		F7852D151EA88CD500E8E2C6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		F7852D161EA88CD500E8E2C6 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		F7BAD3C11EE5B79800606E5C /* UIView+FGLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FGLoading.h"; sourceTree = "<group>"; };
-		F7BAD3C21EE5B79800606E5C /* UIView+FGLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FGLoading.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +44,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F71A91131EF0349600242FF5 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				F71A91141EF0349600242FF5 /* Additions */,
+				F71A91171EF0349600242FF5 /* ViewControllers */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		F71A91141EF0349600242FF5 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				F71A91151EF0349600242FF5 /* UIView+FGLoading.h */,
+				F71A91161EF0349600242FF5 /* UIView+FGLoading.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		F71A91171EF0349600242FF5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F71A91181EF0349600242FF5 /* MainViewController.h */,
+				F71A91191EF0349600242FF5 /* MainViewController.m */,
+				F71A911A1EF0349600242FF5 /* MainViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		F7852CF11EA88C8000E8E2C6 = {
 			isa = PBXGroup;
 			children = (
@@ -66,20 +91,14 @@
 		F7852CFC1EA88C8000E8E2C6 /* FOREXZGApp */ = {
 			isa = PBXGroup;
 			children = (
+				F71A91131EF0349600242FF5 /* UILayer */,
 				F7852D001EA88C8000E8E2C6 /* AppDelegate.h */,
 				F7852D011EA88C8000E8E2C6 /* AppDelegate.m */,
-				F7852D031EA88C8000E8E2C6 /* ViewController.h */,
-				F7852D041EA88C8000E8E2C6 /* ViewController.m */,
 				F7852D061EA88C8000E8E2C6 /* Main.storyboard */,
 				F7852D091EA88C8000E8E2C6 /* Assets.xcassets */,
 				F7852D0B1EA88C8000E8E2C6 /* LaunchScreen.storyboard */,
 				F7852D0E1EA88C8000E8E2C6 /* Info.plist */,
 				F7852CFD1EA88C8000E8E2C6 /* Supporting Files */,
-				F7852D141EA88CD500E8E2C6 /* MainViewController.h */,
-				F7852D151EA88CD500E8E2C6 /* MainViewController.m */,
-				F7852D161EA88CD500E8E2C6 /* MainViewController.xib */,
-				F7BAD3C11EE5B79800606E5C /* UIView+FGLoading.h */,
-				F7BAD3C21EE5B79800606E5C /* UIView+FGLoading.m */,
 			);
 			path = FOREXZGApp;
 			sourceTree = "<group>";
@@ -153,7 +172,7 @@
 				F7852D0D1EA88C8000E8E2C6 /* LaunchScreen.storyboard in Resources */,
 				F7852D0A1EA88C8000E8E2C6 /* Assets.xcassets in Resources */,
 				F7852D081EA88C8000E8E2C6 /* Main.storyboard in Resources */,
-				F7852D181EA88CD500E8E2C6 /* MainViewController.xib in Resources */,
+				F71A911D1EF0349600242FF5 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,11 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7BAD3C31EE5B79800606E5C /* UIView+FGLoading.m in Sources */,
-				F7852D051EA88C8000E8E2C6 /* ViewController.m in Sources */,
 				F7852D021EA88C8000E8E2C6 /* AppDelegate.m in Sources */,
 				F7852CFF1EA88C8000E8E2C6 /* main.m in Sources */,
-				F7852D171EA88CD500E8E2C6 /* MainViewController.m in Sources */,
+				F71A911B1EF0349600242FF5 /* UIView+FGLoading.m in Sources */,
+				F71A911C1EF0349600242FF5 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
